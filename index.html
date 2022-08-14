@@ -36,51 +36,60 @@ window.alert("what up, fool?");
             </ul>
         </div>
     </div>
+    <style>
     <div class="card">
         <!--pic-->
-        <img src="https://user-images.githubusercontent.com/97244700/156807238-15e2c868-ec70-49a6-aa5f-621cb8ad286d.PNG" alt="the man, the myth, the me" style=140px;height:400px;border-radius:9px
-        .container {
-            position: relative;
-            width: 50%;
-        }
+   .container {
+  position: relative;
+  width: 50%;
+} 
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    flex-wrap: wrap;
+      align-content: center;
+          display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
-        .image {
-            opacity: 1;
-            display: block;
-            <!-- width: 100%; -->
-            height: auto;
-            transition: .5s ease;
-            backface-visibility: hidden;
-        }
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container:hover .image {
+  opacity: 0.3;
+}
 
-        .middle {
-            transition: .5s ease;
-            opacity: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            text-align: center;
-        }
+.container:hover .middle {
+  opacity: 1;
+}
 
-        .container:hover .image {
-            opacity: 0.3;
-        }
-
-        .container:hover .middle {
-            opacity: 1;
-        }
-
-        .text {
-            background-color: #cc0000;
-            color: white;
-            font-size: 16px;
-            padding: 16px 32px;
-        }
-        >
-    </div>
-
+.text {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+   border-radius: 99px;
+}
+</style>
+<div class="container">
+  <img src="https://github.com/adeGambit/adeGambit.github.io/blob/main/suitedWM.jpg?raw=true" alt="Avatar" class="image" style="width:350px;height:700px;border-radius:99px">
+  <div class="middle">
+    <div class="text">ade</div>
+  </div>
+</div>
     <div class="box">
         <div class="description">
             <h2>How it started</h2>
